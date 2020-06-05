@@ -4,11 +4,11 @@ import java.util.*;
 import java.io.*;
 import parcs.*;
 
-public class Solovey implements AM {
+public class Miller implements AM {
 
 public static void main(String[] args) {
         task curtask = new task();
-        curtask.addJarFile("Solovey.jar");
+        curtask.addJarFile("Miller.jar");
         (new Solovey()).run(new AMInfo(curtask, (channel)null));
         curtask.end();
     }
