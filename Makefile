@@ -8,5 +8,5 @@ Miller.jar: out/parcs.jar src/*.java
 	@jar cf out/Miller.jar -C src .
 	@rm -f src/*.class
 
-run: Solovey.jar
-	@cd out && java -cp 'parcs.jar:Miller.jar' Solovey
+run: Miller.jar
+	@cd out && java -cp 'parcs.jar:Miller.jar' Miller
