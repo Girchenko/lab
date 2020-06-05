@@ -1,12 +1,12 @@
 all: run
 
 clean:
-	rm -f src/*.class out/Solovey.jar
+	rm -f src/*.class out/Miller.jar
 
-Solovey.jar: out/parcs.jar src/*.java
+Miller.jar: out/parcs.jar src/*.java
 	@javac -cp out/parcs.jar src/*.java
-	@jar cf out/Solovey.jar -C src .
+	@jar cf out/Miller.jar -C src .
 	@rm -f src/*.class
 
 run: Solovey.jar
-	@cd out && java -cp 'parcs.jar:Solovey.jar' Solovey
+	@cd out && java -cp 'parcs.jar:Miller.jar' Solovey
